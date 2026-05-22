@@ -1,0 +1,17 @@
+<resources>
+
+    <dimen name="margin_titulo">70dp</dimen>
+    <dimen name="margin_card">50dp</dimen>
+    <dimen name="margin_boton">36dp</dimen>
+
+    <dimen name="padding_general">26dp</dimen>
+
+    <dimen name="boton_altura">54dp</dimen>
+    <dimen name="boton_texto">20sp</dimen>
+
+    <dimen name="titulo_texto">34sp</dimen>
+
+    <dimen name="plaza_size">95dp</dimen>
+    <dimen name="plaza_text">22sp</dimen>
+
+</resources>

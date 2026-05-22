@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "961781824616",
+    "project_id": "pineladriantfg",
+    "storage_bucket": "pineladriantfg.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961781824616:android:70881ef434d7929e18cfdd",
+        "android_client_info": {
+          "package_name": "com.example.pineladrin_tfg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt0mQnZOkf-xjZWfDuwVTCgJsZ_D94hp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

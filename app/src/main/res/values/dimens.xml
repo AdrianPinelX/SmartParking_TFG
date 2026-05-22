@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Márgenes originales (mantienen la posición exacta) -->
+    <dimen name="margin_titulo">60dp</dimen>
+    <dimen name="margin_card">40dp</dimen>
+    <dimen name="margin_boton">30dp</dimen>
+
+    <!-- Tamaños generales -->
+    <dimen name="padding_general">24dp</dimen>
+    <dimen name="margin_general">20dp</dimen>
+
+    <!-- Botón -->
+    <dimen name="boton_altura">48dp</dimen>
+    <dimen name="boton_texto">18sp</dimen>
+
+    <!-- Título -->
+    <dimen name="titulo_texto">32sp</dimen>
+
+    <dimen name="plaza_size">85dp</dimen>
+    <dimen name="plaza_text">20sp</dimen>
+
+
+</resources>

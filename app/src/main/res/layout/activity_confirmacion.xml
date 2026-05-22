@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F6F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmación de reserva"
+            android:textColor="#0D47A1"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="24dp"/>
+
+        <!-- FECHA -->
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de reserva:"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"/>
+
+        <!-- MATRÍCULA -->
+        <TextView
+            android:id="@+id/txtMatricula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matrícula registrada:"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- PLAZA -->
+        <TextView
+            android:id="@+id/txtPlaza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plaza seleccionada:"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- TIPO -->
+        <TextView
+            android:id="@+id/txtTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de plaza:"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- CORREO -->
+        <TextView
+            android:id="@+id/txtCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservada por:"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- QR -->
+        <ImageView
+            android:id="@+id/imageQR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Código QR"/>
+
+        <!-- BOTÓN VOLVER -->
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir al menú principal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0D47A1"
+            android:padding="12dp"
+            android:minHeight="52dp"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
