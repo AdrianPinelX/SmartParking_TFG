@@ -31,7 +31,7 @@ class MatriculaActivity : AppCompatActivity() {
 
         btnContinuar.isEnabled = false
 
-        // 🔥 Recibimos todos los datos
+        // Recibimos todos los datos
         fecha = intent.getStringExtra("fecha")
         correo = intent.getStringExtra("correo")
         plaza = intent.getStringExtra("plazaSeleccionada")
@@ -67,7 +67,7 @@ class MatriculaActivity : AppCompatActivity() {
     private fun validarMatricula(): Boolean {
         val texto = editMatricula.text.toString().uppercase()
 
-        // 🔥 Acepta matrículas modernas y antiguas
+        // Acepta matrículas modernas y antiguas
         val regex = Regex("(^[0-9]{4}[A-Z]{3}$)|(^[A-Z]{1,2}[0-9]{4}[A-Z]{1,2}$)")
 
         return if (regex.matches(texto)) {

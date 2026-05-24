@@ -21,7 +21,7 @@ class PlanoActivity : AppCompatActivity() {
     private val db = FirebaseFirestore.getInstance()
     private var plazasOcupadas = mutableListOf<String>()
 
-    // 🔴 Plazas que NUNCA se pueden usar (rojas en el plano)
+    // Plazas que NUNCA se pueden usar (rojas en el plano)
     private val plazasProhibidas = listOf(
         "A6", "A11", "A12",      // Planta 1
         "B8", "B9", "B13", "B14",// Planta 2
@@ -100,7 +100,7 @@ class PlanoActivity : AppCompatActivity() {
 
         val plazas = obtenerPlazas(planta)
 
-        // 🔥 Solo plazas:
+        // Solo plazas:
         // - del tipo correcto
         // - que NO estén ocupadas ese día
         // - que NO sean de las prohibidas (rojas)

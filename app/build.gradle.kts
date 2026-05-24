@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-    id("com.google.gms.google-services")   // 🔥 Plugin necesario para Firebase
+    id("com.google.gms.google-services")   // Plugin necesario para Firebase
 }
 
 android {
@@ -43,10 +43,10 @@ dependencies {
 
     implementation("com.squareup.picasso:picasso:2.71828")
 
-    // 🔥 Firebase Authentication
+    // Firebase Authentication
     implementation("com.google.firebase:firebase-auth:22.3.0")
 
-    // 🔥 Firebase Firestore (si quieres guardar reservas)
+    // Firebase Firestore (si quieres guardar reservas)
     implementation("com.google.firebase:firebase-firestore:24.9.1")
 
     testImplementation(libs.junit)

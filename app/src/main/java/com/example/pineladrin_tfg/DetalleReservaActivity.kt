@@ -39,7 +39,7 @@ class DetalleReservaActivity : AppCompatActivity() {
             return
         }
 
-        // 🔥 BOTÓN ELIMINAR CON CONFIRMACIÓN
+        // BOTÓN ELIMINAR CON CONFIRMACIÓN
         btnEliminar.setOnClickListener {
 
             AlertDialog.Builder(this)
@@ -63,7 +63,7 @@ class DetalleReservaActivity : AppCompatActivity() {
                 .show()
         }
 
-        // 🔥 Cargar datos de la reserva desde Firestore
+        // Cargar datos de la reserva desde Firestore
         db.collection("reservas").document(idReserva)
             .get()
             .addOnSuccessListener { doc ->
@@ -83,7 +83,7 @@ class DetalleReservaActivity : AppCompatActivity() {
                 txtMatricula.text = "Matrícula: $matricula"
                 txtTipo.text = "Tipo: $tipo"
 
-                // 🔥 Generar QR con el ID de la reserva
+                // Generar QR con el ID de la reserva
                 generarQR(idReserva, imageQR)
             }
             .addOnFailureListener {

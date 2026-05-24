@@ -61,7 +61,7 @@ class FormularioActivity : AppCompatActivity() {
                 yearHoy, mesHoy, diaHoy
             )
 
-            // 🔥 BLOQUEAR FECHAS PASADAS
+            //  BLOQUEAR FECHAS PASADAS
             datePicker.datePicker.minDate = hoy.timeInMillis
 
             datePicker.show()

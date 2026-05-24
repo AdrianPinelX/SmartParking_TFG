@@ -21,7 +21,7 @@ class ConfirmacionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_confirmacion)
 
-        val btnVolver = findViewById<Button>(R.id.btnVolver)
+        val btnMenuPrincipal = findViewById<Button>(R.id.btnMenuPrincipal)
         val txtMatricula = findViewById<TextView>(R.id.txtMatricula)
         val txtPlaza = findViewById<TextView>(R.id.txtPlaza)
         val txtTipo = findViewById<TextView>(R.id.txtTipo)
@@ -99,8 +99,8 @@ class ConfirmacionActivity : AppCompatActivity() {
                 Toast.makeText(this, "Error al comprobar reservas", Toast.LENGTH_SHORT).show()
             }
 
-        // 🔥 BOTÓN IR AL MENÚ PRINCIPAL
-        btnVolver.setOnClickListener {
+        // BOTÓN IR AL MENÚ PRINCIPAL
+        btnMenuPrincipal.setOnClickListener {
             val intent = Intent(this, MenuPrincipalActivity::class.java)
             intent.putExtra("correo", correo)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK

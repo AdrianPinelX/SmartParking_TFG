@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        // 🔥 BLOQUEAR MODO OSCURO EN TODA LA APP
+        // BLOQUEAR MODO OSCURO EN TODA LA APP
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         super.onCreate(savedInstanceState)
@@ -41,14 +41,14 @@ class MainActivity : AppCompatActivity() {
 
                     Toast.makeText(this, "Inicio de sesión correcto", Toast.LENGTH_SHORT).show()
 
-                    // 🔥 SI ES ADMIN → IR A LECTOR QR
+                    // SI ES ADMIN → IR A LECTOR QR
                     if (email == "administrador.parking@gmail.com") {
                         val intent = Intent(this, LectorQRActivity::class.java)
                         startActivity(intent)
                         return@addOnSuccessListener
                     }
 
-                    // 🔥 SI NO ES ADMIN → IR AL MENÚ PRINCIPAL
+                    // SI NO ES ADMIN → IR AL MENÚ PRINCIPAL
                     val intent = Intent(this, MenuPrincipalActivity::class.java)
                     intent.putExtra("correo", email)
                     startActivity(intent)
